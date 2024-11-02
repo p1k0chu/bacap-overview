@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "bacap-overview",
+	"version": "${version}",
+	"name": "BACAP Overview",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bacap-overview/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "com.github.p1k0chu.mc_mod.BACAPOverviewClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"bacap-overview.mixins.json",
+		{
+			"config": "bacap-overview.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
