@@ -17,7 +17,13 @@
 	"entrypoints": {
 		"client": [
 			{
-				"value": "com.github.p1k0chu.mc_mod.BACAPOverviewClient",
+				"value": "com.github.p1k0chu.mc_mod.bacap_overview.BACAPOverviewClient",
+				"adapter": "kotlin"
+			}
+		],
+		"main": [
+			{
+				"value": "com.github.p1k0chu.mc_mod.bacap_overview.BACAPOverview",
 				"adapter": "kotlin"
 			}
 		]
