@@ -47,7 +47,7 @@ class MainScreen(val parentScreen: Screen) : Screen(Text.of("BACAP overview")) {
                 .Builder(Text.of(screenPage.title)) {
                     selectedPage = screenPage
                 }
-                .dimensions(5, 10 + index * 25, 100, 20)
+                .dimensions(5 + index * 105, 10, 100, 20)
                 .build()
 
             button.active = selectedPage != screenPage
