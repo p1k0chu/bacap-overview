@@ -3,6 +3,7 @@
   "package": "com.github.p1k0chu.mc_mod.bacap_overview.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ClientAdvancementManagerMixin",
     "GameMenuScreenMixin"
   ],
   "injectors": {
