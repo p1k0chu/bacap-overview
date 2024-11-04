@@ -42,7 +42,7 @@ class MainScreen(val parentScreen: Screen) : Screen(Text.of("BACAP overview")) {
 
         val exitButton = ButtonWidget
             .Builder(Text.of("Exit")) { this.close() }
-            .dimensions(this.width - 60, this.height - 20, 50, 20)
+            .dimensions(this.width - 60, 10, 50, 20)
             .build()
         this.addDrawableChild(exitButton)
     }
