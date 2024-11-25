@@ -25,15 +25,11 @@ class ItemListEntry(
         },
         screen.textRenderer
     )
-//    val idLabel = TextWidget(
-//        Text.literal("[$itemId]").styled { style -> style.withItalic(true).withColor(Colors.GRAY) },
-//        screen.textRenderer
-//    )
+
 
     override fun selectableChildren(): List<Selectable?>? {
         return listOf(
-            nameLabel,
-//            idLabel
+            nameLabel
         )
     }
 
@@ -72,11 +68,6 @@ class ItemListEntry(
         this.nameLabel.y = y
         this.nameLabel.height = entryHeight
         this.nameLabel.render(context, mouseX, mouseY, tickDelta)
-
-//        this.idLabel.x = x + 38 + this.nameLabel.width
-//        this.idLabel.y = y
-//        this.idLabel.height = entryHeight
-//        this.idLabel.render(context, mouseX, mouseY, tickDelta)
     }
 
     override fun children(): List<Element?>? {
