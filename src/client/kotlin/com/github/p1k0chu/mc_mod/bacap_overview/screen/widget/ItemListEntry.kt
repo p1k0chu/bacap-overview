@@ -72,8 +72,7 @@ class ItemListEntry(
 
     override fun children(): List<Element?>? {
         return listOf(
-            nameLabel,
-//            idLabel
+            nameLabel
         )
     }
 
