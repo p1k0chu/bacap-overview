@@ -1,6 +1,6 @@
 package com.github.p1k0chu.mc_mod.bacap_overview.screen.widget
 
-import com.github.p1k0chu.mc_mod.bacap_overview.BACAPOverview
+import com.github.p1k0chu.mc_mod.bacap_overview.Main
 import com.github.p1k0chu.mc_mod.bacap_overview.screen.MainScreen
 import com.mojang.blaze3d.systems.RenderSystem
 import net.minecraft.client.gui.DrawContext
@@ -82,7 +82,7 @@ class ItemListEntry(
     }
 
     companion object {
-        val DONE_TEXTURE = Identifier.of(BACAPOverview.MOD_ID, "textures/gui/icons/done.png")
-        val NOT_DONE_TEXTURE = Identifier.of(BACAPOverview.MOD_ID, "textures/gui/icons/not_done.png")
+        val DONE_TEXTURE: Identifier = Identifier.of(Main.MOD_ID, "textures/gui/icons/done.png")
+        val NOT_DONE_TEXTURE: Identifier = Identifier.of(Main.MOD_ID, "textures/gui/icons/not_done.png")
     }
 }

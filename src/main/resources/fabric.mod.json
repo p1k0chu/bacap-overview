@@ -15,15 +15,10 @@
 	"icon": "assets/bacap-overview/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"client": [
-			{
-				"value": "com.github.p1k0chu.mc_mod.bacap_overview.BACAPOverviewClient",
-				"adapter": "kotlin"
-			}
-		],
+		"client": [],
 		"main": [
 			{
-				"value": "com.github.p1k0chu.mc_mod.bacap_overview.BACAPOverview",
+				"value": "com.github.p1k0chu.mc_mod.bacap_overview.Main",
 				"adapter": "kotlin"
 			}
 		]
